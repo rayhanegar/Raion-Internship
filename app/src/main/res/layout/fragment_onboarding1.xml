@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/blue"
     android:padding="30dp"
-    tools:context=".onboarding.onboardingScreen.onboarding1">
+    tools:context=".onboarding.onboardingScreen.Onboarding1">
 
     <ImageView
         android:id="@+id/ivOnboarding1"
