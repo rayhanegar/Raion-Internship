@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         //INI ADALAH PERUBAHAN DARI BRANCH LYRA
+        print("AKSJHDKAHSKDH")
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
