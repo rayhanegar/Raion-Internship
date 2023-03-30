@@ -1,56 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/blue_400"
     android:padding="30dp"
+    android:orientation="vertical"
     tools:context=".onboarding.onboardingScreen.Onboarding1">
 
     <ImageView
         android:id="@+id/ivOnboarding1"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="140dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center_horizontal"
         android:src="@drawable/onboarding1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="120dp"/>
 
     <TextView
-        android:id="@+id/tvTitleOnboarding1"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvHeading1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:fontFamily="@font/montserratmedium"
-        android:text="Welcome to MatchIT!"
-        android:textColor="@color/white"
-        android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivOnboarding1" />
+        style="@style/Heading1"
+        android:text="Welcome to \nMatchIT!"
+        android:layout_marginTop="90dp"
+        />
 
     <TextView
-        android:id="@+id/tvDescOnboarding1"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/montserratbold"
-        android:text="The simply app solution \nthat will match your \nproject with project \nseekers"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitleOnboarding1" />
+        style="@style/body"
+        android:text="The simply app solution that will match your projects with project seekers"
+        android:layout_marginTop="20dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="right"
+        android:layout_marginBottom="15dp">
 
-    <Button
-        android:id="@+id/btnNext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:fontFamily="@font/montserratbold"
-        android:text="next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <Button
+            android:id="@+id/btnGetStarted"
+            android:backgroundTint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Get started"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/montserrat_700"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -2,31 +2,41 @@
     <!-- Base application theme. -->
     <style name="Theme.RaionInternship" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/beige</item>
-        <item name="colorPrimaryVariant">@color/white</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">@color/blue_400</item>
+        <item name="colorPrimaryVariant">@color/blue_400</item>
+        <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/beige_dark</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/beige_400</item>
+        <item name="colorSecondaryVariant">@color/beige_600</item>
+        <item name="colorOnSecondary">@color/white</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.RaionInternship.Clean" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/beige</item>
-        <item name="colorPrimaryVariant">@color/white</item>
-        <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/beige_dark</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+    // Style for text: Title
+    <style name="Title" parent="TextAppearance.AppCompat.Title">
+        <item name="fontFamily">@font/montserrat_700</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
     </style>
+
+    // Style for text: Heading 1
+    <style name="Heading1" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/montserrat_700</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    // Style for text: Body
+    <style name="body" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/montserrat_400</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
 
     <style name="Theme.RaionInternship.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
     <style name="Theme.RaionInternship.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="blue">#3A98B9</color>
-    <color name="beige">#fff1dc</color>
-    <color name="beige_dark">#e8d5c4</color>
+    <color name="blue_400">#3A98B9</color>
+    <color name="beige_400">#fff1dc</color>
+    <color name="beige_600">#e8d5c4</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="grey">#EEEEEE</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_400">#D9D9D9</color>
 
 </resources>

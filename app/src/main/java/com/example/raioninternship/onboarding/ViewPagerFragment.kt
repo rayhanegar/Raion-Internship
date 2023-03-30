@@ -24,7 +24,6 @@ class ViewPagerFragment : Fragment() {
         val view = binding.root
 
         val fragmentList = arrayListOf<Fragment>(
-            Onboarding0(), // Splash screen to be
             Onboarding1(),
             Onboarding2(),
             Onboarding3(),
