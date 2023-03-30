@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        //INI ADALAH PERUBAHAN DARI BRANCH LYRA
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
