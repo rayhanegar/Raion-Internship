@@ -1,13 +1,16 @@
 package com.example.raioninternship.onboarding
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.raioninternship.R
+import androidx.fragment.app.Fragment
 import com.example.raioninternship.databinding.FragmentViewPagerBinding
-import com.example.raioninternship.onboarding.onboardingScreen.*
+import com.example.raioninternship.onboarding.onboardingScreen.Onboarding1
+import com.example.raioninternship.onboarding.onboardingScreen.Onboarding2
+import com.example.raioninternship.onboarding.onboardingScreen.Onboarding3
+import com.example.raioninternship.onboarding.onboardingScreen.Onboarding4
+import com.tbuonomo.viewpagerdotsindicator.DotsIndicator
 
 class ViewPagerFragment : Fragment() {
 
@@ -18,7 +21,7 @@ class ViewPagerFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentViewPagerBinding.inflate(inflater, container, false)
         val view = binding.root
@@ -29,8 +32,13 @@ class ViewPagerFragment : Fragment() {
             Onboarding3(),
             Onboarding4()
         )
+
         val adapter = ViewPagerAdapter (fragmentList, requireActivity().supportFragmentManager, lifecycle)
         binding.viewPager.adapter = adapter
+
+        val dotsIndicator = binding.dotsIndicator
+        dotsIndicator.attachTo(binding.viewPager)
+
         return view
 
     }
