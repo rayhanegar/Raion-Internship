@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basic">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_kiat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/custom_backround_kiat"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kiat IT"
+                android:textSize="28sp"
+                android:fontFamily="@font/mbold"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"/>
+
+            <ImageView
+                android:layout_width="325dp"
+                android:layout_height="215dp"
+                app:srcCompat="@drawable/pict_kiat_1"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steve Jobs"
+                android:textSize="20sp"
+                android:fontFamily="@font/mbold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/custom_background_kiat_2">
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/mmedium"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="@string/paragraf_steve_jobs" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mantap"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/cutom_button_kiat"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
