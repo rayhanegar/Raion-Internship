@@ -7,7 +7,7 @@
     android:background="@color/blue_400"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".screen.projectdetail.ProjectDetail">
+    tools:context=".screen.projectdetail.ProjectDetailScreen">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

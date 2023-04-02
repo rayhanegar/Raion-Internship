@@ -19,7 +19,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext
 
-class ProjectForm : Fragment() {
+class ProjectFormScreen : Fragment() {
 
     private var _binding: ScreenProjectFormBinding? = null
     private val binding get() = _binding!!
@@ -95,7 +95,7 @@ class ProjectForm : Fragment() {
                 saveToFirestore()
                 navController.navigate(R.id.projectApplyScreen)
             } else {
-                Toast.makeText(this@ProjectForm.context, "Please fill all the form!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@ProjectFormScreen.context, "Please fill all the form!", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -131,12 +131,12 @@ class ProjectForm : Fragment() {
 
             applicantsCollectionRef.add(newApplicant).await()
             withContext(Dispatchers.Main){
-                Toast.makeText(this@ProjectForm.context, "Successfully saved your application", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@ProjectFormScreen.context, "Successfully saved your application", Toast.LENGTH_SHORT).show()
             }
 
         } catch (e: Exception) {
             withContext(Dispatchers.Main){
-                Toast.makeText(this@ProjectForm.context, e.message, Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@ProjectFormScreen.context, e.message, Toast.LENGTH_SHORT).show()
             }
         }
 

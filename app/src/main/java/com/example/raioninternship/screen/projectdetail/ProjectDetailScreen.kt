@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.raioninternship.R
 import com.example.raioninternship.databinding.ScreenProjectDetailBinding
 
-class ProjectDetail : Fragment() {
+class ProjectDetailScreen : Fragment() {
 
     private var _binding: ScreenProjectDetailBinding? = null
     private val binding get() = _binding!!

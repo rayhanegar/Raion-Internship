@@ -8,7 +8,7 @@
     android:background="@color/blue_400"
     android:orientation="vertical"
     android:padding="15dp"
-    tools:context=".screen.onboarding.ViewPagerFragment">
+    tools:context=".screen.onboarding.OnboardingScreen">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
