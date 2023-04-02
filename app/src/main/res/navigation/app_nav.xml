@@ -3,11 +3,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_nav"
-    app:startDestination="@id/viewPagerFragment">
+    app:startDestination="@id/splashScreen4">
 
     <fragment
         android:id="@+id/viewPagerFragment"
-        android:name="com.example.raioninternship.onboarding.ViewPagerFragment"
+        android:name="com.example.raioninternship.screen.onboarding.ViewPagerFragment"
         android:label="fragment_view_pager"
         tools:layout="@layout/fragment_view_pager" />
+
+    <fragment
+        android:id="@+id/splashScreen4"
+        android:name="com.example.raioninternship.screen.splashscreen.SplashScreen"
+        android:label="screen_splashscreen"
+        tools:layout="@layout/screen_splashscreen" >
+        <action
+            android:id="@+id/action_splashScreen4_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/projectForm"
+        android:name="com.example.raioninternship.screen.projectform.ProjectForm"
+        android:label="screen_project_form"
+        tools:layout="@layout/screen_project_form" />
+    <fragment
+        android:id="@+id/projectDetail"
+        android:name="com.example.raioninternship.screen.projectdetail.ProjectDetail"
+        android:label="screen_project_detail"
+        tools:layout="@layout/screen_project_detail" />
+    <fragment
+        android:id="@+id/projectApplyScreen"
+        android:name="com.example.raioninternship.screen.projectapply.ProjectApplyScreen"
+        android:label="screen_project_apply"
+        tools:layout="@layout/screen_project_apply" />
 </navigation>

@@ -9,7 +9,7 @@
     android:theme="@style/Theme.RaionInternship"
     android:background="@color/blue_400"
     android:padding="16dp"
-    tools:context=".SplashScreenActivity"
+    tools:context=".screen.splashscreen.SplashScreen"
     >
 
     <ImageView

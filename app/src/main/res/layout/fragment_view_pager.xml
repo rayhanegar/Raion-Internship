@@ -8,7 +8,7 @@
     android:background="@color/blue_400"
     android:orientation="vertical"
     android:padding="15dp"
-    tools:context=".onboarding.ViewPagerFragment">
+    tools:context=".screen.onboarding.ViewPagerFragment">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
@@ -34,7 +34,7 @@
             android:id="@+id/dotsIndicator"
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:layout_marginRight="100dp"
+            android:layout_marginEnd="100dp"
             app:dotsColor="@color/white"
             app:dotsCornerRadius="8dp"
             app:dotsSize="12dp"

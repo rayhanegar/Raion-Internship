@@ -1,4 +1,4 @@
-package com.example.raioninternship.onboarding.onboardingScreen
+package com.example.raioninternship.screen.onboarding.onboardingScreen
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -14,6 +14,7 @@ class Onboarding4 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_onboarding4, container, false)
     }

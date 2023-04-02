@@ -1,9 +1,8 @@
-package com.example.raioninternship.projectdetails
+package com.example.raioninternship.screen.projectdetail
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.raioninternship.data.Project
 import com.example.raioninternship.databinding.ItemProjectDetailBinding
 
 class ProjectDetailAdapter (var projectFields : List<String>, var projectRecords : List<String> ) : RecyclerView.Adapter<ProjectDetailAdapter.ProjectDetailViewHolder>(){
@@ -22,10 +21,10 @@ class ProjectDetailAdapter (var projectFields : List<String>, var projectRecords
     override fun onBindViewHolder(holder: ProjectDetailViewHolder, position: Int) {
         with(holder){
             with(projectFields[position]){
-                binding.tvCardHeader.text = this.toString()
+                binding.tvCardHeader.text = this
             }
             with (projectRecords[position]){
-                binding.tvCardContent.text = this.toString()
+                binding.tvCardContent.text = this
             }
         }
     }

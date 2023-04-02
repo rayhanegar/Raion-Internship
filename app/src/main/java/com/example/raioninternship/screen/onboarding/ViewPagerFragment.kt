@@ -1,4 +1,4 @@
-package com.example.raioninternship.onboarding
+package com.example.raioninternship.screen.onboarding
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,11 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.raioninternship.databinding.FragmentViewPagerBinding
-import com.example.raioninternship.onboarding.onboardingScreen.Onboarding1
-import com.example.raioninternship.onboarding.onboardingScreen.Onboarding2
-import com.example.raioninternship.onboarding.onboardingScreen.Onboarding3
-import com.example.raioninternship.onboarding.onboardingScreen.Onboarding4
-import com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+import com.example.raioninternship.screen.onboarding.onboardingScreen.Onboarding1
+import com.example.raioninternship.screen.onboarding.onboardingScreen.Onboarding2
+import com.example.raioninternship.screen.onboarding.onboardingScreen.Onboarding3
+import com.example.raioninternship.screen.onboarding.onboardingScreen.Onboarding4
 
 class ViewPagerFragment : Fragment() {
 
