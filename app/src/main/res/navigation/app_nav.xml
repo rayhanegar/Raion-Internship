@@ -36,4 +36,9 @@
         android:name="com.example.raioninternship.screen.projectapply.ProjectApplyScreen"
         android:label="screen_project_apply"
         tools:layout="@layout/screen_project_apply" />
+    <fragment
+        android:id="@+id/homepageScreen"
+        android:name="com.example.raioninternship.screen.homepage.HomepageScreen"
+        android:label="screen_homepage"
+        tools:layout="@layout/screen_homepage" />
 </navigation>
