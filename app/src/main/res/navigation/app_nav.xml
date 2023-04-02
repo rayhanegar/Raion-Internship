@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/viewPagerFragment"
-        android:name="com.example.raioninternship.screen.onboarding.ViewPagerFragment"
+        android:name="com.example.raioninternship.screen.onboarding.OnboardingScreen"
         android:label="fragment_view_pager"
-        tools:layout="@layout/fragment_view_pager" />
+        tools:layout="@layout/screen_onboarding" />
 
     <fragment
         android:id="@+id/splashScreen4"
@@ -23,12 +23,12 @@
 
     <fragment
         android:id="@+id/projectForm"
-        android:name="com.example.raioninternship.screen.projectform.ProjectForm"
+        android:name="com.example.raioninternship.screen.projectform.ProjectFormScreen"
         android:label="screen_project_form"
         tools:layout="@layout/screen_project_form" />
     <fragment
         android:id="@+id/projectDetail"
-        android:name="com.example.raioninternship.screen.projectdetail.ProjectDetail"
+        android:name="com.example.raioninternship.screen.projectdetail.ProjectDetailScreen"
         android:label="screen_project_detail"
         tools:layout="@layout/screen_project_detail" />
     <fragment

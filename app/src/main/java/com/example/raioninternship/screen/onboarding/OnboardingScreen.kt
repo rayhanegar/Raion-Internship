@@ -5,15 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.raioninternship.databinding.FragmentViewPagerBinding
+import com.example.raioninternship.databinding.ScreenOnboardingBinding
 import com.example.raioninternship.screen.onboarding.onboardingScreen.Onboarding1
 import com.example.raioninternship.screen.onboarding.onboardingScreen.Onboarding2
 import com.example.raioninternship.screen.onboarding.onboardingScreen.Onboarding3
 import com.example.raioninternship.screen.onboarding.onboardingScreen.Onboarding4
 
-class ViewPagerFragment : Fragment() {
+class OnboardingScreen : Fragment() {
 
-    private var _binding: FragmentViewPagerBinding? = null
+    private var _binding: ScreenOnboardingBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -22,7 +22,7 @@ class ViewPagerFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        _binding = FragmentViewPagerBinding.inflate(inflater, container, false)
+        _binding = ScreenOnboardingBinding.inflate(inflater, container, false)
         val view = binding.root
 
         val fragmentList = arrayListOf<Fragment>(
