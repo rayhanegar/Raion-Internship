@@ -9,9 +9,10 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-
-    <!--Di kiat -->
-    <string name="paragraf_steve_jobs" >Steve Jobs adalah pendiri Apple sekaligus pemimpin dalam pengembangan produk revolusioner seperti iPhone, iPad, dan Macintosh. Dikenal sebagai inovator teknologi yang memperkenalkan desain produk elegan dan antarmuka pengguna yang intuitif. "Stay Hungry, Stay Foolish", sebuah kalimat dari Steve Jobs yang mengajak untuk terus meraih kesuksesan, tetap bersemangat, dan berani mengambil risiko serta mencoba hal-hal baru dalam mengembangkan teknologi yang bermanfaat bagi banyak orang.</string>
-
-    <string name="paragraf_mark_zurk">Mark Zuckerberg adalah seorang inovator teknologi sekaligus pendiri dari Facebook, platform media sosial yang sangat populer. Menjadi inspirasi bagi orang-orang di bidang IT untuk terus menciptakan inovasi, menemukan solusi baru, dan membawa perubahan positif bagi banyak orang. "Move Fast and Break Things", katanya, yang mengajarkan untuk berani mengambil risiko dan terus mencoba hal-hal baru dalam pengembangan teknologi yang memberikan dampak positif bagi masyarakat.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_homepage">Homepage</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

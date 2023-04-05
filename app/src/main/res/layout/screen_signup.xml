@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/basic"
-    >
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blue_400"
+    tools:context=".screen.sign.SignUpScreen">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -152,7 +153,7 @@
             android:layout_marginTop="12dp"
             >
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnSeeker"
                 android:layout_width="130dp"
                 android:layout_height="48dp"
@@ -168,7 +169,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"/>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnClient"
                 android:layout_width="130dp"
                 android:layout_height="48dp"
@@ -193,12 +194,12 @@
                 android:layout_height="48dp"
                 android:fontFamily="@font/mmedium"
                 android:text="I agree all statements in terms and condition"
-                android:textColor="@color/white1"
+                android:textColor="@color/grey_400"
                 android:textSize="12sp"
-                android:theme="@style/colored_checkbox" />
+                />
         </LinearLayout>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSignup"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
@@ -217,7 +218,7 @@
             android:text="or sign up with"
             android:layout_gravity="center"
             android:fontFamily="@font/mmedium"
-            android:textColor="@color/white1"
+            android:textColor="@color/white"
             android:textSize="14sp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"/>
@@ -258,7 +259,7 @@
                 android:layout_weight="1"
                 android:text="Already have an account?"
                 android:fontFamily="@font/mmedium"
-                android:textColor="@color/white1"
+                android:textColor="@color/white"
                 android:textSize="14sp"
                 android:layout_marginEnd="2dp"
                 />
@@ -269,7 +270,7 @@
                 android:layout_height="wrap_content"
                 android:text="Sign in"
                 android:fontFamily="@font/mbold"
-                android:textColor="@color/white1"
+                android:textColor="@color/white"
                 android:textSize="14sp"
                 />
         </LinearLayout>

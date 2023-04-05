@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/splashScreen4">
+
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.raioninternship.screen.onboarding.OnboardingScreen"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/screen_onboarding" />
+
+    <fragment
+        android:id="@+id/splashScreen4"
+        android:name="com.example.raioninternship.screen.splashscreen.SplashScreen"
+        android:label="screen_splashscreen"
+        tools:layout="@layout/screen_splashscreen" >
+        <action
+            android:id="@+id/action_splashScreen4_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/projectForm"
+        android:name="com.example.raioninternship.screen.projectform.ProjectFormScreen"
+        android:label="screen_project_form"
+        tools:layout="@layout/screen_project_form" />
+    <fragment
+        android:id="@+id/projectDetail"
+        android:name="com.example.raioninternship.screen.projectdetail.ProjectDetailScreen"
+        android:label="screen_project_detail"
+        tools:layout="@layout/screen_project_detail" />
+    <fragment
+        android:id="@+id/projectApplyScreen"
+        android:name="com.example.raioninternship.screen.projectapply.ProjectApplyScreen"
+        android:label="screen_project_apply"
+        tools:layout="@layout/screen_project_apply" />
+    <fragment
+        android:id="@+id/signUpScreen"
+        android:name="com.example.raioninternship.screen.sign.SignUpScreen"
+        android:label="screen_signup"
+        tools:layout="@layout/screen_signup" />
+    <fragment
+        android:id="@+id/signInScreen"
+        android:name="com.example.raioninternship.screen.sign.SignInScreen"
+        android:label="screen_signin"
+        tools:layout="@layout/screen_signin" />
+</navigation>
