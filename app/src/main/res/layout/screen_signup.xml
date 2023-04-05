@@ -61,7 +61,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/fullnameEditText"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="50dp"
                 android:textSize="14sp"
                 android:fontFamily="@font/mmedium"
                 android:background="@drawable/custom_button" />
@@ -79,7 +79,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/phonenumberEditText"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="50dp"
                 android:textSize="14sp"
                 android:fontFamily="@font/mmedium"
                 android:background="@drawable/custom_button" />
@@ -97,7 +97,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/emailEditText"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="50dp"
                 android:textSize="14sp"
                 android:fontFamily="@font/mmedium"
                 android:background="@drawable/custom_button" />
@@ -118,7 +118,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/passEditText"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="50dp"
                 android:background="@drawable/custom_button"
                 android:fontFamily="@font/mmedium"
                 android:textSize="14sp" />
@@ -139,7 +139,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/confirmpassEditText"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="50dp"
                 android:textSize="14sp"
                 android:fontFamily="@font/mmedium"
                 android:background="@drawable/custom_button" />

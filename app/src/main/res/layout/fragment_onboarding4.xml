@@ -7,6 +7,7 @@
     android:background="@color/blue_400"
     android:padding="30dp"
     android:orientation="vertical"
+    android:id="@+id/onBoarding4"
     tools:context=".screen.onboarding.onboardingScreen.Onboarding4">
 
     <ImageView
