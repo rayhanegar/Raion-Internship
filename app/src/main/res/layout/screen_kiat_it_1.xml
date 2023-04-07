@@ -10,11 +10,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include
-            layout="@layout/toolbar_kiat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -23,6 +18,15 @@
             android:layout_marginBottom="50dp"
             android:background="@drawable/custom_backround_kiat"
             >
+
+            <ImageView
+                android:id="@+id/backwhite"
+                android:layout_width="16dp"
+                android:layout_height="28dp"
+                app:srcCompat="@drawable/back"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
