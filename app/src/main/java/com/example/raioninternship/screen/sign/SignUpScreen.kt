@@ -29,6 +29,11 @@ class SignUpScreen : Fragment() {
         binding = ScreenSignupBinding.inflate(layoutInflater)
         val view = binding.root
 
+        binding.signin.setOnClickListener {
+            val intent = Intent(requireActivity(), SignInScreen::class.java)
+            startActivity(intent)
+        }
+
         //sebuah listener yang menghub button signup dengan binding
         //listener bertugas untuk melakukan aksi yang diinginkan ketika tombol tersebut ditekan
         binding.btnSignup.setOnClickListener {
