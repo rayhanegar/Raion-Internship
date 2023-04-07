@@ -1,4 +1,4 @@
-package com.example.raioninternship.screen.onboarding
+package com.example.raioninternship.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

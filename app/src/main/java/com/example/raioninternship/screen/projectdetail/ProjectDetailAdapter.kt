@@ -30,4 +30,5 @@ class ProjectDetailAdapter (var projectFields : List<String>, var projectRecords
     }
 
 
+
 }
