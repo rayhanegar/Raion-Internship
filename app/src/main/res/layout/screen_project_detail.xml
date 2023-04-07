@@ -28,7 +28,8 @@
             <ImageView
                 android:id="@+id/ivProjectBanner"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
                 android:src="@drawable/project_banner1" />
 
             <LinearLayout
@@ -80,7 +81,7 @@
         android:paddingHorizontal="15dp"
         android:id="@+id/rvProjectDetail"
         android:layout_width="match_parent"
-        android:layout_height="460dp"
+        android:layout_height="450dp"
         android:translationY="-50dp"/>
 
     <Button
@@ -89,8 +90,8 @@
         android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
         android:translationY="-50dp"
+        android:layout_marginTop="5dp"
         android:text="Tertarik!"
         android:textAllCaps="false"
         style="@style/body_black"

@@ -8,8 +8,9 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.raioninternship.R
+import com.example.raioninternship.adapter.ViewPagerAdapter
 import com.example.raioninternship.databinding.ScreenHomepageBinding
-import com.example.raioninternship.screen.homepage.banner.HomepageBanner
+import com.example.raioninternship.screen.homepage.banner.*
 import com.example.raioninternship.screen.homepage.contract.HomepageContract
 
 class HomepageScreen : Fragment() {
@@ -27,14 +28,26 @@ class HomepageScreen : Fragment() {
         val view = binding.root
         val navController = findNavController()
 
-        val fragmentList = arrayListOf<Fragment>(
-            HomepageBanner(),
-            HomepageContract()
+        val bannerList = arrayListOf<Fragment>(
+            HomepageBanner1(),
+            HomepageBanner2(),
+            HomepageBanner3(),
+            HomepageBanner4()
         )
 
-        val adapter = HomepageAdapter(fragmentList)
-        binding.rvHomepage.adapter = adapter
-        binding.rvHomepage.layoutManager = LinearLayoutManager(requireContext())
+        val contractList = listOf(
+            "Luxe Web Development",
+            "Maju Group Front-end",
+            "Lexus Virtual Showroom",
+            "NASA Artemis Hackjam"
+        )
+
+        val bannerAdapter = ViewPagerAdapter(bannerList, requireActivity().supportFragmentManager, lifecycle)
+        binding.vpBanner.adapter = bannerAdapter
+
+        val contractAdapter = HomepageContractAdapter(contractList)
+        binding.rvContract.adapter = contractAdapter
+        binding.rvContract.layoutManager = LinearLayoutManager(this.context)
 
         return view
     }

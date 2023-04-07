@@ -9,7 +9,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.raioninternship.R
 
-class HomepageAdapter(private val fragmentList: List<Fragment>) : RecyclerView.Adapter<HomepageAdapter.ViewHolder>() {
+class HomepageAdapter(private val fragmentList: ArrayList<Fragment>) : RecyclerView.Adapter<HomepageAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_homepage, parent, false)

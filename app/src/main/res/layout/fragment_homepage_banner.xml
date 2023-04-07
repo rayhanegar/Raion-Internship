@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
+    android:layout_height="180dp"
     tools:context=".screen.homepage.banner.HomepageBanner">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vpBanner"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:padding="15dp">
-
-    </androidx.viewpager2.widget.ViewPager2>
-
+        android:layout_height="match_parent"
+        android:padding="15dp"/>
 
 </LinearLayout>

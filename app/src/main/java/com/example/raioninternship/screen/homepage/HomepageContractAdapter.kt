@@ -1,4 +1,4 @@
-package com.example.raioninternship.screen.homepage.contract
+package com.example.raioninternship.screen.homepage
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

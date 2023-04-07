@@ -6,9 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.raioninternship.R
-import com.example.raioninternship.databinding.FragmentHomepageContractActiveBinding
 import com.example.raioninternship.databinding.FragmentHomepageContractPendingBinding
+import com.example.raioninternship.screen.homepage.HomepageContractAdapter
 
 
 class HomepageContractPending : Fragment() {
