@@ -7,11 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.raioninternship.MainActivity
-import com.example.raioninternship.databinding.ScreenKiatIt1Binding
+import com.example.raioninternship.databinding.ScreenKiatIt2Binding
 
-class Kiat1Screen : Fragment() {
+class Kiat2Screen : Fragment() {
 
-    private lateinit var binding : ScreenKiatIt1Binding
+    private lateinit var binding : ScreenKiatIt2Binding
 
     override fun onCreateView(
         inflater: LayoutInflater,

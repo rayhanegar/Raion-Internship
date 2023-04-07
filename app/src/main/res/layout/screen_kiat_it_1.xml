@@ -12,20 +12,20 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center_horizontal"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="450dp"
             android:background="@drawable/custom_backround_kiat"
             >
 
             <ImageView
-                android:id="@+id/backwhite"
+                android:id="@+id/btnback"
                 android:layout_width="16dp"
                 android:layout_height="28dp"
                 app:srcCompat="@drawable/back"
-                android:layout_marginStart="20dp"
                 android:layout_marginTop="25dp"
+                android:layout_marginStart="-170dp"
                 />
 
             <TextView
@@ -35,7 +35,7 @@
                 android:textSize="28sp"
                 android:fontFamily="@font/mbold"
                 android:textColor="@color/black"
-                android:layout_marginTop="30dp"/>
+                android:layout_marginTop="25dp" />
 
             <ImageView
                 android:layout_width="325dp"
@@ -59,9 +59,23 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center_horizontal"
+            android:layout_marginTop="-400dp"
             android:background="@drawable/custom_background_kiat_2">
 
-            <Button
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Steve Jobs adalah pendiri Apple sekaligus pemimpin dalam pengembangan produk revolusioner seperti iPhone, iPad, dan Macintosh. Dikenal sebagai inovator teknologi yang memperkenalkan desain produk elegan dan antarmuka pengguna yang intuitif.
+Stay Hungry, Stay Foolish, sebuah kalimat dari Steve Jobs yang mengajak untuk terus meraih kesuksesan, tetap bersemangat, dan berani mengambil risiko serta mencoba hal-hal baru dalam mengembangkan teknologi yang bermanfaat bagi banyak orang."
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mlight"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mantap"
