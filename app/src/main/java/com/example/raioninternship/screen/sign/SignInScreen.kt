@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.raioninternship.MainActivity
 import com.example.raioninternship.data.Repository
+import com.example.raioninternship.databinding.ScreenChangePasswordBinding
 import com.example.raioninternship.databinding.ScreenSigninBinding
 
 class SignInScreen : Fragment() {
@@ -29,8 +30,8 @@ class SignInScreen : Fragment() {
         }
 
         binding.forpasstext.setOnClickListener {
-            val intent = Intent(requireActivity(), ChangePasswordScreen::class.java)
-            startActivity(intent)
+            val changePasswordBinding = ScreenChangePasswordBinding.inflate(layoutInflater)
+            repo.changePass(changePasswordBinding)
         }
 
         binding.btnSignin.setOnClickListener(){
