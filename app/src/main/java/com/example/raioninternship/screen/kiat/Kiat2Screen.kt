@@ -6,12 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.raioninternship.MainActivity
+import com.example.raioninternship.R
 import com.example.raioninternship.databinding.ScreenKiatIt2Binding
 
 class Kiat2Screen : Fragment() {
 
-    private lateinit var binding : ScreenKiatIt2Binding
+    private var _binding : ScreenKiatIt2Binding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -19,9 +22,12 @@ class Kiat2Screen : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+        _binding = ScreenKiatIt2Binding.inflate(inflater, container, false)
+        val view = binding.root
+
+        val navController = findNavController()
         binding.btnback.setOnClickListener{
-            val intent = Intent(requireActivity(), MainActivity::class.java)
-            startActivity(intent)
+            navController.navigate(R.id.homepageScreen)
         }
 
         return view

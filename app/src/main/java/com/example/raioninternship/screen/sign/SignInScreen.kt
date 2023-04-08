@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.raioninternship.MainActivity
+import com.example.raioninternship.R
 import com.example.raioninternship.data.Repository
 import com.example.raioninternship.databinding.ScreenChangePasswordBinding
 import com.example.raioninternship.databinding.ScreenSigninBinding
@@ -23,6 +25,7 @@ class SignInScreen : Fragment() {
         binding = ScreenSigninBinding.inflate(layoutInflater)
         val view = binding.root
         val repo = Repository()
+        val navController = findNavController()
 
         binding.signup.setOnClickListener {
             val intent = Intent(requireActivity(), SignUpScreen::class.java)
@@ -32,6 +35,21 @@ class SignInScreen : Fragment() {
         binding.forpasstext.setOnClickListener {
             val changePasswordBinding = ScreenChangePasswordBinding.inflate(layoutInflater)
             repo.changePass(changePasswordBinding)
+        }
+
+        // Add as seeker
+        binding.btnSeeker.setOnClickListener(){
+            it.isSelected = true
+        }
+
+        // Add as client
+        binding.btnClient.setOnClickListener(){
+            it.isSelected = true
+        }
+
+        // Add navigation to sign-up
+        binding.signup.setOnClickListener(){
+            navController.navigate(R.id.signUpScreen)
         }
 
         binding.btnSignin.setOnClickListener(){
@@ -44,11 +62,12 @@ class SignInScreen : Fragment() {
                 if (email.isNotEmpty() && pass.isNotEmpty()) {
                         repo.signin(email, pass,
                             onSuccess = { authResult ->
-                                val intent = Intent(requireActivity(), MainActivity::class.java)
-                                startActivity(intent)
+                                navController.navigate(R.id.homepageScreen)
                             },
                             onFailure = { exception ->
-                                Toast.makeText(context,"Empty fields are not allowed !!", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(requireContext(), "Sign-in failed.", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(requireContext(), "Logged-in in preview mode.", Toast.LENGTH_LONG).show()
+                                navController.navigate(R.id.homepageScreen)
                             }
                         )
                 } else {

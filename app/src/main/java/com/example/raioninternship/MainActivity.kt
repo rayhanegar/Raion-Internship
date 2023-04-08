@@ -25,7 +25,8 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigationView.setupWithNavController(navController)
 
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
-            if (destination.id == R.id.splashScreen4 || destination.id == R.id.viewPagerFragment) {
+            if (destination.id == R.id.splashScreen4 || destination.id == R.id.viewPagerFragment
+                || destination.id == R.id.signUpScreen || destination.id == R.id.signInScreen) {
                 binding.bottomNavigationView.visibility = View.INVISIBLE
             } else {
                 binding.bottomNavigationView.visibility = View.VISIBLE

@@ -79,9 +79,9 @@
         <TextView
             android:id="@+id/forpasstext"
             android:layout_width="wrap_content"
-            android:layout_height="10dp"
+            android:layout_height="20dp"
             android:layout_marginStart="230dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="@font/mmedium"
             android:text="Forgot password?"
             android:textColor="@color/white"

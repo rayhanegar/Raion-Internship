@@ -61,4 +61,22 @@
         android:name="com.example.raioninternship.screen.homepage.banner.HomepageBanner"
         android:label="fragment_homepage_banner"
         tools:layout="@layout/fragment_homepage_banner" />
+    <fragment
+        android:id="@+id/kiat1Screen"
+        android:name="com.example.raioninternship.screen.kiat.Kiat1Screen"
+        android:label="Kiat1Screen" />
+    <fragment
+        android:id="@+id/kiat2Screen"
+        android:name="com.example.raioninternship.screen.kiat.Kiat2Screen"
+        android:label="Kiat2Screen" />
+    <fragment
+        android:id="@+id/searchPageScreen"
+        android:name="com.example.raioninternship.screen.searchpage.SearchPageScreen"
+        android:label="screen_search_page"
+        tools:layout="@layout/screen_search_page" />
+    <fragment
+        android:id="@+id/chatScreen"
+        android:name="com.example.raioninternship.screen.chat.ChatScreen"
+        android:label="screen_chat_page"
+        tools:layout="@layout/screen_chat_page" />
 </navigation>

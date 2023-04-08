@@ -49,6 +49,32 @@ class HomepageScreen : Fragment() {
         binding.rvContract.adapter = contractAdapter
         binding.rvContract.layoutManager = LinearLayoutManager(this.context)
 
+        binding.ivBannerNext.setOnClickListener(){
+            val currentPosition = binding.vpBanner.currentItem
+            if (currentPosition < bannerAdapter.itemCount - 1) {
+                binding.vpBanner.currentItem = currentPosition + 1
+            } else {
+                binding.vpBanner.currentItem = 0
+            }
+        }
+
+        binding.ivBannerPrev.setOnClickListener(){
+            val currentPosition = binding.vpBanner.currentItem
+            if (currentPosition > 0) {
+                binding.vpBanner.currentItem = currentPosition - 1
+            } else {
+                binding.vpBanner.currentItem = 0
+            }
+        }
+
+        binding.cvKiat1.setOnClickListener(){
+            navController.navigate(R.id.kiat1Screen)
+        }
+
+        binding.cvKiat2.setOnClickListener(){
+            navController.navigate(R.id.kiat2Screen)
+        }
+
         return view
     }
 
