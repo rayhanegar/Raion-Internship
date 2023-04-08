@@ -8,5 +8,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey_200">#EEEEEE</color>
     <color name="grey_400">#D9D9D9</color>
+    <color name="red">#E74646</color>
 
 </resources>

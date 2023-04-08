@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_400">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="450dp"
+            android:background="@drawable/custom_backround_kiat"
+            >
+
+            <ImageView
+                android:id="@+id/btnback"
+                android:layout_width="16dp"
+                android:layout_height="28dp"
+                app:srcCompat="@drawable/back"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="-170dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kiat IT"
+                android:textSize="28sp"
+                android:fontFamily="@font/mbold"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp" />
+
+            <ImageView
+                android:layout_width="325dp"
+                android:layout_height="215dp"
+                app:srcCompat="@drawable/pict_kiat_2"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marck Zuckerberg"
+                android:textSize="20sp"
+                android:fontFamily="@font/mbold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="-400dp"
+            android:background="@drawable/custom_background_kiat_2">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mlight"
+                android:text="Mark Zuckerberg adalah seorang inovator teknologi sekaligus pendiri dari Facebook, platform media sosial yang sangat populer. Menjadi inspirasi bagi orang-orang di bidang IT untuk terus menciptakan inovasi, menemukan solusi baru, dan membawa perubahan positif bagi banyak orang.
+Move Fast and Break Things, katanya, yang mengajarkan untuk berani mengambil risiko dan terus mencoba hal-hal baru dalam pengembangan teknologi yang memberikan dampak positif bagi masyarakat. "
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mantap"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/cutom_button_kiat"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.raioninternship.screen.onboarding
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,7 @@ import com.example.raioninternship.screen.onboarding.onboardingScreen.Onboarding
 import com.example.raioninternship.screen.onboarding.onboardingScreen.Onboarding2
 import com.example.raioninternship.screen.onboarding.onboardingScreen.Onboarding3
 import com.example.raioninternship.screen.onboarding.onboardingScreen.Onboarding4
+import com.example.raioninternship.screen.sign.SignUpScreen
 
 class OnboardingScreen : Fragment() {
 

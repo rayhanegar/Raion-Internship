@@ -37,6 +37,16 @@
         android:label="screen_project_apply"
         tools:layout="@layout/screen_project_apply" />
     <fragment
+        android:id="@+id/signUpScreen"
+        android:name="com.example.raioninternship.screen.sign.SignUpScreen"
+        android:label="screen_signup"
+        tools:layout="@layout/screen_signup" />
+    <fragment
+        android:id="@+id/signInScreen"
+        android:name="com.example.raioninternship.screen.sign.SignInScreen"
+        android:label="screen_signin"
+        tools:layout="@layout/screen_signin" />
+    <fragment
         android:id="@+id/homepageScreen"
         android:name="com.example.raioninternship.screen.homepage.HomepageScreen"
         android:label="screen_homepage"

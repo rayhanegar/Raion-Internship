@@ -25,7 +25,7 @@ class SplashScreen : Fragment() {
 
         binding.actSplashScreen.alpha = 0f
         binding.actSplashScreen.animate().setDuration(1500).alpha(1f).withEndAction(){
-            navController.navigate(R.id.viewPagerFragment)
+            navController.navigate(R.id.signUpScreen)
             activity?.overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         }
 
