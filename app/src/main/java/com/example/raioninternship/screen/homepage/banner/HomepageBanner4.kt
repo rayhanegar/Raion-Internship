@@ -1,33 +1,33 @@
-package com.example.raioninternship.screen.projectapply
+package com.example.raioninternship.screen.homepage.banner
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import com.example.raioninternship.R
-import com.example.raioninternship.databinding.ScreenProjectApplyBinding
+import com.example.raioninternship.databinding.FragmentHomepageBanner4Binding
 
+class HomepageBanner4 : Fragment() {
 
-class ProjectApplyScreen : Fragment() {
-
-    private var _binding: ScreenProjectApplyBinding? = null
+    private var _binding : FragmentHomepageBanner4Binding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         // Inflate the layout for this fragment
-        _binding = ScreenProjectApplyBinding.inflate(inflater, container, false)
+        _binding = FragmentHomepageBanner4Binding.inflate(inflater, container, false)
         val view = binding.root
         val navController = findNavController()
 
-        binding.btnHomepage.setOnClickListener(){
-            navController.navigate(R.id.homepageScreen)
+        binding.ivCardBanner.setOnClickListener(){
+
         }
+
         return view
     }
-
 }

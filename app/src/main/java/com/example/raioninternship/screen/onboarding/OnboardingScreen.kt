@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.raioninternship.adapter.ViewPagerAdapter
 import com.example.raioninternship.databinding.ScreenOnboardingBinding
 import com.example.raioninternship.screen.onboarding.onboardingScreen.Onboarding1
 import com.example.raioninternship.screen.onboarding.onboardingScreen.Onboarding2

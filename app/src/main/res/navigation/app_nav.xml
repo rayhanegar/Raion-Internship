@@ -46,4 +46,19 @@
         android:name="com.example.raioninternship.screen.sign.SignInScreen"
         android:label="screen_signin"
         tools:layout="@layout/screen_signin" />
+    <fragment
+        android:id="@+id/homepageScreen"
+        android:name="com.example.raioninternship.screen.homepage.HomepageScreen"
+        android:label="screen_homepage"
+        tools:layout="@layout/screen_homepage" />
+    <fragment
+        android:id="@+id/homepageContract"
+        android:name="com.example.raioninternship.screen.homepage.contract.HomepageContract"
+        android:label="fragment_homepage_contract"
+        tools:layout="@layout/fragment_homepage_contract" />
+    <fragment
+        android:id="@+id/homepageBanner"
+        android:name="com.example.raioninternship.screen.homepage.banner.HomepageBanner"
+        android:label="fragment_homepage_banner"
+        tools:layout="@layout/fragment_homepage_banner" />
 </navigation>
